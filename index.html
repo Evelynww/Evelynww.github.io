@@ -71,66 +71,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-hexo搭建个人博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2021-09-03T07:53:49.000Z" itemprop="datePublished">2021-09-03</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo搭建个人博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h1 id="使用hexo搭建个人博客"><a href="#使用hexo搭建个人博客" class="headerlink" title="使用hexo搭建个人博客"></a>使用hexo搭建个人博客</h1><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>首先需要安装node.js,npm和cnpm, 因为这里没有出现什么问题，所以可以直接按照其它博客中的流程来走。安装好之后初始化一个博客，这里出现了问题</p>
-<h2 id="hexo-init-报错"><a href="#hexo-init-报错" class="headerlink" title="hexo init 报错"></a>hexo init 报错</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">fatal: unable to access &#x27;https://github.com/hexojs/hexo-starter.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br></pre></td></tr></table></figure>
-
-<img src="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/01.png" class="" width="01">
-
-<h3 id="出错原因"><a href="#出错原因" class="headerlink" title="出错原因"></a>出错原因</h3><p>服务器的SSL证书没有经过第三方机构的签署，报错</p>
-<h3 id="解决方式：解除ssl验证"><a href="#解决方式：解除ssl验证" class="headerlink" title="解决方式：解除ssl验证"></a>解决方式：解除ssl验证</h3><img src="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/02.png" class="" width="02">
-
-<h2 id="后续使用"><a href="#后续使用" class="headerlink" title="后续使用"></a>后续使用</h2><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><p>现在我们已经安装好hexo了，接下来启动它然后写我们的文档。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">启动博客hexo s/start</span><br></pre></td></tr></table></figure>
-
-<img src="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/03.png" class="" width="03">
-
-<p>浏览器中输入链接即可看到默认的这篇文章</p>
-<img src="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/04.png" class="" width="04">
-
-<h3 id="创建博客文章"><a href="#创建博客文章" class="headerlink" title="创建博客文章"></a>创建博客文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n/new &quot;文章名&quot;</span><br></pre></td></tr></table></figure>
-
-<img src="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/05.png" class="" width="05">
-
-<p>接下来我们就可以使用VSCode、Markdown等软件编写我们的文档了。</p>
-<p>编写完文档后，使用<code>hexo clean</code> 先清理一下，然后<code>hexo g</code> 重新生成，然后<code>hexo s</code> 启动。发现我们在markdown中添加的图片无法正常显示。</p>
-<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckt42txst0001d8vg1a4a60pa" data-title="hexo搭建个人博客" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
     <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/03/hello-world/" class="article-date">
@@ -170,7 +110,99 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/03/hello-world/" data-id="ckt42txso0000d8vg0ol35hgu" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/03/hello-world/" data-id="ckt44bgg00000hwvgf039425a" data-title="Hello World" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-hexo搭建个人博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time class="dt-published" datetime="2021-09-01T07:53:49.000Z" itemprop="datePublished">2021-09-01</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="使用hexo搭建个人博客"><a href="#使用hexo搭建个人博客" class="headerlink" title="使用hexo搭建个人博客"></a>使用hexo搭建个人博客</h1><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>首先需要安装node.js,npm和cnpm, 因为这里没有出现什么问题，所以可以直接按照其它博客中的流程来走。安装好之后初始化一个博客，这里出现了问题</p>
+<h2 id="hexo-init-报错"><a href="#hexo-init-报错" class="headerlink" title="hexo init 报错"></a>hexo init 报错</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">INFO  Cloning hexo-starter https://github.com/hexojs/hexo-starter.git</span><br><span class="line">fatal: unable to access &#x27;https://github.com/hexojs/hexo-starter.git/&#x27;: OpenSSL SSL_read: Connection was reset, errno 10054</span><br></pre></td></tr></table></figure>
+
+<img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/01.png" class="" title="hexo init报错">
+
+<h3 id="出错原因"><a href="#出错原因" class="headerlink" title="出错原因"></a>出错原因</h3><p>服务器的SSL证书没有经过第三方机构的签署，报错</p>
+<h3 id="解决方式：解除ssl验证"><a href="#解决方式：解除ssl验证" class="headerlink" title="解决方式：解除ssl验证"></a>解决方式：解除ssl验证</h3><img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/02.png" class="" title="hexo init报错解决">
+
+<h2 id="初步使用"><a href="#初步使用" class="headerlink" title="初步使用"></a>初步使用</h2><h3 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h3><p>现在我们已经安装好hexo了，接下来启动它然后写我们的文档。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">启动博客hexo s/start</span><br></pre></td></tr></table></figure>
+
+<img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/03.png" class="" title="hexo start">
+
+<p>浏览器中输入链接即可看到默认的这篇文章</p>
+<img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/04.png" class="" title="page">
+
+<h3 id="创建博客文章"><a href="#创建博客文章" class="headerlink" title="创建博客文章"></a>创建博客文章</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo n/new &quot;文章名&quot;</span><br></pre></td></tr></table></figure>
+
+<img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/05.png" class="" title="hexo new">
+
+<p>接下来我们就可以使用VSCode、Markdown等软件编写我们的文档了。</p>
+<p>编写完文档后，使用<code>hexo clean</code> 先清理一下，然后<code>hexo g</code> 重新生成，然后<code>hexo s</code> 启动。发现我们在markdown中添加的图片无法正常显示。</p>
+<h4 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h4><ul>
+<li>修改<code>_config.yml</code>中的<code>post_asset_folder: true</code></li>
+<li>下载<code>hexo-image-link</code> 插件</li>
+</ul>
+ <img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20210903161522826.png" class="" title="插件下载">
+
+<ul>
+<li>修改Markdown图像的设置<code>文件-偏好设置-图像</code></li>
+</ul>
+ <img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20210903161639049.png" class="" title="markdown设置">
+
+<ul>
+<li>现在直接赋值粘贴图像到页面即可</li>
+</ul>
+<img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20210903161717076.png" class="" title="image-20210903161717076">
+
+<p>​        highlight部分是图像的label可以修改</p>
+<p>现在我们可以重新<code>clean</code>再<code>generate</code>再<code>start</code>hexo，也可以直接刷新页面就可以看到更新的效果了</p>
+<h2 id="将博客部署到github"><a href="#将博客部署到github" class="headerlink" title="将博客部署到github"></a>将博客部署到github</h2><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ul>
+<li>登录自己的github，新建repository,注意标红的地方必须是和自己的名字一样</li>
+</ul>
+ <img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20210903163655983.png" class="" title="create repository">
+
+<ul>
+<li>安装deploy插件</li>
+</ul>
+<img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20210903164326441.png" class="" title="安装deploy插件">
+
+<ul>
+<li>配置<code>_config.yml</code> 文件，<strong>注意空格</strong></li>
+</ul>
+<img src="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/image-20210903164600514.png" class="" title="设置_config文件">
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="ckt44bgg70001hwvg0ptqegoy" data-title="hexo搭建个人博客" class="article-share-link">Share</a>
       
       
       
@@ -213,11 +245,11 @@
       <ul>
         
           <li>
-            <a href="/2021/09/03/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo搭建个人博客</a>
+            <a href="/2021/09/03/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2021/09/03/hello-world/">Hello World</a>
+            <a href="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo搭建个人博客</a>
           </li>
         
       </ul>
