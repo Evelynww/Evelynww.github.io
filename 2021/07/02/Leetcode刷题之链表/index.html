@@ -6,18 +6,42 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives: 2021/9 | EvelynBlog</title>
+  <title>Leetcode刷题之链表 | EvelynBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="个人技术博客">
-<meta property="og:type" content="website">
-<meta property="og:title" content="EvelynBlog">
-<meta property="og:url" content="http://example.com/archives/2021/09/index.html">
+  <meta name="description" content="链表12345678910111213&#x2F;&#x2F;定义public class ListNode&amp;#123;	int val;	ListNode next;	public ListNode()&amp;#123;&amp;#125;	public ListNode(int val)&amp;#123;		this.val &#x3D; val;	&amp;#125;	public ListNode(int val,ListNode next)&amp;#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Leetcode刷题之链表">
+<meta property="og:url" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/index.html">
 <meta property="og:site_name" content="EvelynBlog">
-<meta property="og:description" content="个人技术博客">
+<meta property="og:description" content="链表12345678910111213&#x2F;&#x2F;定义public class ListNode&amp;#123;	int val;	ListNode next;	public ListNode()&amp;#123;&amp;#125;	public ListNode(int val)&amp;#123;		this.val &#x3D; val;	&amp;#125;	public ListNode(int val,ListNode next)&amp;#">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903200806292.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903201023871.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903201031431.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903202636811.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904162421934.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904162502846.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903205057872.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903205107155.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903234046443.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903234207236.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903235300367.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903235335056.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903235355531.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904002323220.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904002339847.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904002356612.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904145734216.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904145758396.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904165054257.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904170248344.png">
+<meta property="og:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904170406287.png">
+<meta property="article:published_time" content="2021-07-02T12:02:50.000Z">
+<meta property="article:modified_time" content="2021-09-04T10:42:09.141Z">
 <meta property="article:author" content="Evelyn Wen">
-<meta property="article:tag" content="前端,后端,java,leetcode">
+<meta property="article:tag" content="leetcode 链表篇一">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903200806292.png">
   
     <link rel="alternative" href="/atom.xml" title="EvelynBlog" type="application/atom+xml">
   
@@ -141,48 +165,415 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-Leetcode刷题之链表" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-09-01T07:53:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-09-01</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/09/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo搭建个人博客</a>
+    <h1 class="article-title" itemprop="name">
+      Leetcode刷题之链表
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
+        
+        <a href="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/" class="archive-article-date">
+  	<time datetime="2021-07-02T12:02:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-07-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="链表"><a href="#链表" class="headerlink" title="链表"></a>链表</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//定义</span><br><span class="line">public class ListNode&#123;</span><br><span class="line">	int val;</span><br><span class="line">	ListNode next;</span><br><span class="line">	public ListNode()&#123;&#125;</span><br><span class="line">	public ListNode(int val)&#123;</span><br><span class="line">		this.val = val;</span><br><span class="line">	&#125;</span><br><span class="line">	public ListNode(int val,ListNode next)&#123;</span><br><span class="line">		this.val = val;</span><br><span class="line">		this.next = next;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+<p>对于链表相关的题，一般要从迭代、递归、双指针三个方向来想。</p>
+<h2 id="一、反转链表"><a href="#一、反转链表" class="headerlink" title="一、反转链表"></a>一、反转链表</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-linked-list/">206.反转链表</a></p>
+<h3 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h3><p>给定单链表的头结点head，反转链表，返回反转后的链表</p>
+<h4 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h4><h5 id="1、特殊情况：链表为空或者链表长度小于2"><a href="#1、特殊情况：链表为空或者链表长度小于2" class="headerlink" title="1、特殊情况：链表为空或者链表长度小于2"></a>1、特殊情况：链表为空或者链表长度小于2</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903200806292.png" class="" title="image-20210903200806292">
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">输入：head</span><br></pre></td></tr></table></figure>
+
+<h5 id="2-、正常情况"><a href="#2-、正常情况" class="headerlink" title="2 、正常情况"></a>2 、正常情况</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903201023871.png" class="" title="image-20210903201023871">
+
+ <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903201031431.png" class="" title="image-20210903201031431">
+
+<h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>对于这个问题，我们可以考虑两个方法：迭代和递归。</p>
+<p>首先来看递归。</p>
+<h4 id="递归法"><a href="#递归法" class="headerlink" title="递归法"></a>递归法</h4><ul>
+<li>递归终止条件：head == null||head.next == null</li>
+<li>递：ListNode cur = reverseList(head.next);</li>
+<li>归:  head.next.next = head; head.next = null;</li>
+</ul>
+ <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903202636811.png" class="" title="image-20210903202636811">
+
+<h5 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h5><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(head==<span class="keyword">null</span>||head.next==<span class="keyword">null</span>) <span class="keyword">return</span> head;</span><br><span class="line">        ListNode cur = reverseList(head.next);<span class="comment">//反转后的链表</span></span><br><span class="line">        head.next.next = head;</span><br><span class="line">        head.next = <span class="keyword">null</span>;</span><br><span class="line">        <span class="keyword">return</span> cur;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="复杂度分析"><a href="#复杂度分析" class="headerlink" title="复杂度分析"></a>复杂度分析</h5><ul>
+<li>时间复杂度：O(n), 对每个节点反转</li>
+<li>空间复杂度：O(n), 递归栈</li>
+</ul>
+<h3 id="迭代法"><a href="#迭代法" class="headerlink" title="迭代法"></a>迭代法</h3><p>从前往后依次反向。</p>
+<h5 id="代码实现-1"><a href="#代码实现-1" class="headerlink" title="代码实现"></a>代码实现</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode reverseList(ListNode head) &#123;</span><br><span class="line">        if(head==null||head.next==null) return head;</span><br><span class="line">        ListNode pre = null;</span><br><span class="line">        ListNode cur = head;</span><br><span class="line">        while(cur!=null)&#123;</span><br><span class="line">            ListNode next = cur.next;</span><br><span class="line">            cur.next = pre;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = next;</span><br><span class="line">        &#125;</span><br><span class="line">        return pre;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="复杂度分析-1"><a href="#复杂度分析-1" class="headerlink" title="复杂度分析"></a>复杂度分析</h5><ul>
+<li>时间复杂度：O(n)，n为链表长度，需要遍历链表</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h2 id="二、反转链表进阶一"><a href="#二、反转链表进阶一" class="headerlink" title="二、反转链表进阶一"></a>二、反转链表进阶一</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-linked-list-ii/">92.反转链表II</a></p>
+<h3 id="题目描述-1"><a href="#题目描述-1" class="headerlink" title="题目描述"></a>题目描述</h3><p>给定单链表的头指针head和两个整数left和right，其中left&lt;=right，要求反转从位置left到位置right的链表节点，返回翻转后的链表。</p>
+<h4 id="测试用例-1"><a href="#测试用例-1" class="headerlink" title="测试用例"></a>测试用例</h4><h5 id="left-right-直接返回"><a href="#left-right-直接返回" class="headerlink" title="left==right:直接返回"></a>left==right:直接返回</h5><img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904162421934.png" class="" title="image-20210904162421934">
+
+<h5 id="left-0-头结点会变"><a href="#left-0-头结点会变" class="headerlink" title="left==0:头结点会变"></a>left==0:头结点会变</h5><p>所以需要有一个dummy节点</p>
+<h5 id="正常情况"><a href="#正常情况" class="headerlink" title="正常情况"></a>正常情况</h5><img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904162502846.png" class="" title="image-20210904162502846">
+
+<p>另外，还需要考虑left和right超出链表长度的情况，如果超出了，直接return</p>
+<h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>我们可以用上一题的链表反转方法，只要找到反转开始的节点和结束节点即可。</p>
+<h4 id="具体方法"><a href="#具体方法" class="headerlink" title="具体方法"></a>具体方法</h4><ul>
+<li>因为链表头结点可能会变，所以我们需要一个dummy节点指向头结点，这样更方便返回新链表的头结点</li>
+<li>为了将不需要反转的部分和翻转后的部分连接起来，我们需要保存需要反转的起始节点的前驱节点和结束节点的后继节点</li>
+<li>为了更好地用上上一题的代码实现，我们将需要反转的部分和原链表断开，最后再接上。</li>
+</ul>
+<h4 id="代码实现-2"><a href="#代码实现-2" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode reverseBetween(ListNode head, int left, int right) &#123;</span><br><span class="line">        if(left==right) return head;</span><br><span class="line">        ListNode dummy = new ListNode(0,head);</span><br><span class="line">        ListNode pre = dummy,start=dummy,end = dummy;</span><br><span class="line">        // 找需要反转的头节点的前驱节点</span><br><span class="line">        for(int i = 0;i&lt;left-1&amp;&amp;start!=null;i++)&#123;</span><br><span class="line">            start = start.next;</span><br><span class="line">        &#125;</span><br><span class="line">        for(int i = 0;i&lt;right&amp;&amp;end!=null;i++)&#123;</span><br><span class="line">            end = end.next;</span><br><span class="line">        &#125;</span><br><span class="line">        //此时的start是待翻转节点的前驱节点,用pre保存一下</span><br><span class="line">        pre = start;</span><br><span class="line">        start = start.next;//待翻转节点的起始节点</span><br><span class="line">        ListNode next = end.next;//记录待翻转节点的终止节点的后继节点</span><br><span class="line">        end.next = null;//断开</span><br><span class="line">        pre.next = reverseList(start);//前驱和翻转后的链表的头结点连接</span><br><span class="line">        // 原来的头是现在的尾，将尾和后继节点连起来</span><br><span class="line">        start.next = next;</span><br><span class="line">        return dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">    public ListNode reverseList(ListNode head)&#123;</span><br><span class="line">        ListNode pre = null,cur = head;</span><br><span class="line">        while(cur!=null)&#123;</span><br><span class="line">            ListNode next = cur.next;</span><br><span class="line">            cur.next = pre;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = next;</span><br><span class="line">        &#125;</span><br><span class="line">        return pre;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-2"><a href="#复杂度分析-2" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O(N)</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h2 id="三、K个一组翻转链表"><a href="#三、K个一组翻转链表" class="headerlink" title="三、K个一组翻转链表"></a>三、K个一组翻转链表</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reverse-nodes-in-k-group/submissions/">25.K个一组翻转链表</a></p>
+<h3 id="题目描述-2"><a href="#题目描述-2" class="headerlink" title="题目描述"></a>题目描述</h3><p>给一个链表，每k个节点一组进行翻转，返回翻转后的链表，其中k是一个正整数，其值小于或等于链表的长度。若节点综述不是k的整数倍，则最后剩余的节点要保持原有顺序。</p>
+<p>要求：常数额外空间</p>
+<h4 id="测试用例-2"><a href="#测试用例-2" class="headerlink" title="测试用例"></a>测试用例</h4> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903205057872.png" class="" title="image-20210903205057872">
+
+ <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903205107155.png" class="" title="image-20210903205107155">
+
+<h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>前面我们完成了反转链表的实现。这道题在上面的基础上加上了对链表的分组。</p>
+<p>我们需要将链表分成k个一组，一组一组地进行反转。具体思路为</p>
+<ul>
+<li>将整个链表分为已翻转+待翻转+暂未翻转</li>
+<li>每次翻转前，确定要翻转的范围，并记录下一段的头节点next</li>
+<li>每段都需要两个变量 pre 和 end，pre 代表待翻转链表的前驱，end 代表待翻转链表的末尾。<ul>
+<li>对于每一段，头结点为start = pre.next; 将该段和后面断开，使用206的反转链表算法，返回新链表的头结点</li>
+<li>pre.next = 新链表的头结点</li>
+<li>新链表的尾节点是原链表的头结点， 则start.next = next;</li>
+<li>更新下一段的pre和end为start</li>
+</ul>
+</li>
+</ul>
+<h4 id="代码实现-3"><a href="#代码实现-3" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseKGroup</span><span class="params">(ListNode head, <span class="keyword">int</span> k)</span> </span>&#123;</span><br><span class="line">        ListNode dummy = <span class="keyword">new</span> ListNode(-<span class="number">1</span>);</span><br><span class="line">        dummy.next = head;</span><br><span class="line"></span><br><span class="line">        ListNode pre = dummy,end = dummy;</span><br><span class="line">        <span class="keyword">while</span>(end.next!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>;i&lt;k&amp;&amp;end!=<span class="keyword">null</span>;i++)&#123;</span><br><span class="line">                end = end.next;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(end==<span class="keyword">null</span>) <span class="keyword">break</span>;</span><br><span class="line">			</span><br><span class="line">            ListNode start = pre.next; <span class="comment">//待翻转的头结点</span></span><br><span class="line">            ListNode next = end.next; <span class="comment">// 下一次翻转的头结点</span></span><br><span class="line">            end.next = <span class="keyword">null</span>; <span class="comment">//将本段尾节点和后面断开，使用206的翻转链表方法进行翻转</span></span><br><span class="line">            pre.next = reverseList(start);<span class="comment">//返回本段翻转后的新头结点</span></span><br><span class="line"></span><br><span class="line">            start.next = next;  <span class="comment">//原来的头节点是翻转后的尾节点，让它指向待翻转的头结点</span></span><br><span class="line">            pre = start; <span class="comment">//待翻转的pre</span></span><br><span class="line">            end = pre;	<span class="comment">//新的end也指向他，去找下一段的尾</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> ListNode <span class="title">reverseList</span><span class="params">(ListNode head)</span></span>&#123;</span><br><span class="line">        ListNode prev = <span class="keyword">null</span>,cur = head;</span><br><span class="line">        <span class="keyword">while</span>(cur!=<span class="keyword">null</span>)&#123;</span><br><span class="line">            ListNode next = cur.next;</span><br><span class="line">            cur.next = prev;</span><br><span class="line">            prev = cur;</span><br><span class="line">            cur = next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> prev;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-3"><a href="#复杂度分析-3" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O(nk), 每次需要调用reverseList()</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h2 id="四、环形链表"><a href="#四、环形链表" class="headerlink" title="四、环形链表"></a>四、环形链表</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/linked-list-cycle/">141.环形链表</a></p>
+<h3 id="题目描述-3"><a href="#题目描述-3" class="headerlink" title="题目描述"></a>题目描述</h3><p>给定一个链表判断链表是否有环。若有环返回true，无环返回false</p>
+<h4 id="测试用例-3"><a href="#测试用例-3" class="headerlink" title="测试用例"></a>测试用例</h4><p>pos表示链表尾连到链表中的位置的索引。如果是-1就没有环，这个参数是不会输入的。</p>
+<h5 id="特殊情况：链表为空或者链表长度小于2"><a href="#特殊情况：链表为空或者链表长度小于2" class="headerlink" title="特殊情况：链表为空或者链表长度小于2"></a>特殊情况：链表为空或者链表长度小于2</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903234046443.png" class="" title="image-20210903234046443">
+
+<h5 id="正常情况-1"><a href="#正常情况-1" class="headerlink" title="正常情况"></a>正常情况</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903234207236.png" class="" title="image-20210903234207236">
+
+<h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p>双指针法。<code>如果链表有环，那么一个指针每次走两步，一个指针每次走一步，他们总能相遇的</code></p>
+<h4 id="代码实现-4"><a href="#代码实现-4" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">public class Solution &#123;</span><br><span class="line">    public boolean hasCycle(ListNode head) &#123;</span><br><span class="line">    	//特殊情况</span><br><span class="line">        if(head==null||head.next==null) return false;</span><br><span class="line">        //双指针法</span><br><span class="line">        ListNode first = head.next;</span><br><span class="line">        ListNode second = head;</span><br><span class="line">        //当两个指针相遇，说明肯定有环，退出循环返回true</span><br><span class="line">        while(first!=second)&#123;</span><br><span class="line">        	//如果指针为null，直接返回falSe</span><br><span class="line">            if(first==null||first.next==null)&#123;</span><br><span class="line">                return false;</span><br><span class="line">            &#125;</span><br><span class="line">            first =first.next.next;</span><br><span class="line">            second = second.next;</span><br><span class="line">        &#125;</span><br><span class="line">        return true;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-4"><a href="#复杂度分析-4" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O(n) 遍历链表</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h2 id="五、环形链表进阶"><a href="#五、环形链表进阶" class="headerlink" title="五、环形链表进阶"></a>五、环形链表进阶</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/linked-list-cycle-ii/">142.环形链表II</a></p>
+<h3 id="题目描述-4"><a href="#题目描述-4" class="headerlink" title="题目描述"></a>题目描述</h3><p>在上一题的基础上，需要找入环的第一个节点，要求不能修改给定的链表，并且需要O(1)空间复杂度。</p>
+<h3 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h3><p>朴素的方法就是用哈希表。遍历链表，在遍历的过程中搜索节点是否已在哈希表中，找到的第一个已经出现在哈希表中的节点就是第一个入环节点。如果搜索到null, 那么说明没有环，直接返回null即可。</p>
+<p>但是题目要求O(1)空间复杂度，所以不能用哈希表来做。</p>
+<p>想到<code>双指针法</code></p>
+<h4 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h4><p>假设链表有环且进入环之间有a个节点，环内有b个节点。有两个指针都从链表头开始走。快指针first每次走两步，慢指针second每次走一步。如果链表有环，那么这两个指针最后肯定能在环内相遇。设相遇时慢指针走的步数为s, 快指针走得步数为f, 则</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f = 2s</span><br></pre></td></tr></table></figure>
+
+<p>然后，要想相遇，肯定是快指针比慢指针多在环里面走了n圈才追上的(因为快指针总是比慢指针多走一步)，因此</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">f = s + nb</span><br></pre></td></tr></table></figure>
+
+<p>上面两个式子结合我们可以得到<code>s=nb</code></p>
+<p>然后现在我们思考，<font color = 'red'>要让一个指针从开头走到环入口节点，这个指针走的步数为a+nb步</font>，而现在慢指针已经走了nb步，所以我们让再走a步就是入环节点了。因此我们<font color = 'red'>让fast回到起点和slow一起走，相遇的时候就是a步</font></p>
+<p>因此在fast和slow指针第一次相遇后，我们让fast回到起点，然后fast和slow每次都走一步。相交点就是第一个入环节点。</p>
+<h5 id="代码实现-5"><a href="#代码实现-5" class="headerlink" title="代码实现"></a>代码实现</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">public class Solution &#123;</span><br><span class="line">    public ListNode detectCycle(ListNode head) &#123;</span><br><span class="line">        // 特殊情况：链表为空或链表长度为1</span><br><span class="line">        if(head==null||head.next==null) return null;</span><br><span class="line">        ListNode fast = head,slow = head;</span><br><span class="line">        // 循环条件不能写fast==slow，因为开始时就是相等的</span><br><span class="line">        while(true)&#123;</span><br><span class="line">            if(fast==null||fast.next==null) return null;</span><br><span class="line">            fast = fast.next.next;</span><br><span class="line">            slow = slow.next;</span><br><span class="line">            // 相遇了就退出循环</span><br><span class="line">            if(fast==slow) break;            </span><br><span class="line">        &#125;</span><br><span class="line">        // 让fast回到起点</span><br><span class="line">        fast = head;</span><br><span class="line">        while(fast!=slow)&#123;</span><br><span class="line">            fast = fast.next;</span><br><span class="line">            slow = slow.next;</span><br><span class="line">        &#125;</span><br><span class="line">        return slow;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="复杂度分析-5"><a href="#复杂度分析-5" class="headerlink" title="复杂度分析"></a>复杂度分析</h5><ul>
+<li>时间复杂度：O(N). 第一次相遇，慢指针走的长度不会超过链表总长度,<font color = 'green'>因为fast总比slow多一步，所以slow在进入环开始走的时候，如果他俩没相遇，fast肯定在slow前面，就算slow要走b步，fast也可以走2b步，而fast在走2b步之前就已经追上slow了</font>。第二次相遇走的长度是a，所以总体时间复杂度是线性的</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h2 id="六、合并两个有序链表"><a href="#六、合并两个有序链表" class="headerlink" title="六、合并两个有序链表"></a>六、合并两个有序链表</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/merge-two-sorted-lists/">21.合并两个有序链表</a></p>
+<h3 id="题目描述-5"><a href="#题目描述-5" class="headerlink" title="题目描述"></a>题目描述</h3><p>将两个升序链表合并为一个新的升序链表并返回。</p>
+<h4 id="测试用例-4"><a href="#测试用例-4" class="headerlink" title="测试用例"></a>测试用例</h4><h5 id="特殊情况1：两个链表都为空，返回空"><a href="#特殊情况1：两个链表都为空，返回空" class="headerlink" title="特殊情况1：两个链表都为空，返回空"></a>特殊情况1：两个链表都为空，返回空</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903235300367.png" class="" title="image-20210903235300367">
+
+<h5 id="特殊情况2：两个链表其中要给链表为空，返回非空的哪一个"><a href="#特殊情况2：两个链表其中要给链表为空，返回非空的哪一个" class="headerlink" title="特殊情况2：两个链表其中要给链表为空，返回非空的哪一个"></a>特殊情况2：两个链表其中要给链表为空，返回非空的哪一个</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903235335056.png" class="" title="image-20210903235335056">
+
+<h5 id="正常情况-2"><a href="#正常情况-2" class="headerlink" title="正常情况"></a>正常情况</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210903235355531.png" class="" title="image-20210903235355531">
+
+<h3 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h3><p>这道题其实就是归并排序的并的操作。对于链表我们有两种方法：迭代和递归。</p>
+<p>首先来看迭代，迭代就是数组的归并排序。</p>
+<h4 id="迭代"><a href="#迭代" class="headerlink" title="迭代"></a>迭代</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode mergeTwoLists(ListNode l1, ListNode l2) &#123;</span><br><span class="line">        ListNode prev = new ListNode(-1);</span><br><span class="line">        ListNode dummy = prev;</span><br><span class="line">        // 特殊情况1</span><br><span class="line">        if(l1==null&amp;&amp;l2==null) return l1;</span><br><span class="line">        // 特殊情况2</span><br><span class="line">        if(l1==null||l2==null) return l1==null?l2:l1;</span><br><span class="line">        //正常情况</span><br><span class="line">        while(l1!=null&amp;&amp;l2!=null)&#123;</span><br><span class="line">            if(l1.val&lt;l2.val)&#123;</span><br><span class="line">                prev.next = l1;</span><br><span class="line">                l1 = l1.next;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                prev.next=l2;</span><br><span class="line">                l2 = l2.next;</span><br><span class="line">            &#125;</span><br><span class="line">            prev = prev.next;</span><br><span class="line">        &#125;</span><br><span class="line">        prev.next = l1==null?l2:l1;</span><br><span class="line">        return dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h4 id="递归"><a href="#递归" class="headerlink" title="递归"></a>递归</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode mergeTwoLists(ListNode l1, ListNode l2) &#123;</span><br><span class="line">        // 特殊情况1</span><br><span class="line">        if(l1==null&amp;&amp;l2==null) return l1;</span><br><span class="line">        // 特殊情况2</span><br><span class="line">        if(l1==null||l2==null) return l1==null?l2:l1;</span><br><span class="line">        //正常情况:</span><br><span class="line">        if(l1.val&lt;l2.val)&#123;</span><br><span class="line">            l1.next = mergeTwoLists(l1.next,l2);</span><br><span class="line">            return l1;</span><br><span class="line">        &#125;</span><br><span class="line">        else&#123;</span><br><span class="line">            l2.next = mergeTwoLists(l1,l2.next);</span><br><span class="line">            return l2;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-6"><a href="#复杂度分析-6" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O(m+n) 两个链表的产犊</li>
+<li>空间复杂度：O(1) ,返回的结果不算</li>
+</ul>
+<h2 id="七、进阶：合并K个有序链表"><a href="#七、进阶：合并K个有序链表" class="headerlink" title="七、进阶：合并K个有序链表"></a>七、进阶：合并K个有序链表</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/merge-k-sorted-lists/">23.合并K个有序链表</a></p>
+<h3 id="题目描述-6"><a href="#题目描述-6" class="headerlink" title="题目描述"></a>题目描述</h3><p>给一个链表数组，数组中的每个链表都有序，需要将所有链表合并成一个升序链表，返回合并的结果。</p>
+<h4 id="测试用例-5"><a href="#测试用例-5" class="headerlink" title="测试用例"></a>测试用例</h4><h5 id="特殊情况1：链表数组为空"><a href="#特殊情况1：链表数组为空" class="headerlink" title="特殊情况1：链表数组为空"></a>特殊情况1：链表数组为空</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904002323220.png" class="" title="image-20210904002323220">
+
+<h5 id="特殊情况2：链表数组中的链表为空"><a href="#特殊情况2：链表数组中的链表为空" class="headerlink" title="特殊情况2：链表数组中的链表为空"></a>特殊情况2：链表数组中的链表为空</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904002339847.png" class="" title="image-20210904002339847">
+
+<h5 id="正常情况-3"><a href="#正常情况-3" class="headerlink" title="正常情况"></a>正常情况</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904002356612.png" class="" title="image-20210904002356612">
+
+<h3 id="思路-5"><a href="#思路-5" class="headerlink" title="思路"></a>思路</h3><p>最朴素的方法肯定是从前往后依次合并，即将排好序的部分和下一个进行排序，但是着各种方法复杂度高。然后我们可以借助上一题两个链表的合并想到归并排序。lists的归并可以看成是mid之前归并的结果和mid之后归并之后的链表再归并。</p>
+<h4 id="代码实现-6"><a href="#代码实现-6" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode() &#123;&#125;</span><br><span class="line"> *     ListNode(int val) &#123; this.val = val; &#125;</span><br><span class="line"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span><br><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode mergeKLists(ListNode[] lists) &#123;</span><br><span class="line">        return mergeLists(lists,0,lists.length-1);</span><br><span class="line">    &#125;</span><br><span class="line">    public ListNode mergeLists(ListNode[] lists,int startIndex,int endIndex)&#123;</span><br><span class="line">        //如果start==end，说明list[startIndex]==list[endIndex],已经归并到最后了，直接返回其中一个</span><br><span class="line">        if(startIndex==endIndex) return lists[startIndex];</span><br><span class="line">        //如果startIndex&gt;endIndex,结束</span><br><span class="line">        if(startIndex&gt;endIndex) return null;</span><br><span class="line">        //正常情况</span><br><span class="line">        int mid = (startIndex+endIndex)&gt;&gt;1;</span><br><span class="line">        return mergeTwoLists(mergeLists(lists,startIndex,mid),mergeLists(lists,mid+1,endIndex));</span><br><span class="line">    &#125;</span><br><span class="line">    public ListNode mergeTwoLists(ListNode l1, ListNode l2) &#123;</span><br><span class="line">        ListNode prev = new ListNode(-1);</span><br><span class="line">        ListNode dummy = prev;</span><br><span class="line">        // 特殊情况1</span><br><span class="line">        if(l1==null&amp;&amp;l2==null) return l1;</span><br><span class="line">        // 特殊情况2</span><br><span class="line">        if(l1==null||l2==null) return l1==null?l2:l1;</span><br><span class="line">        //正常情况</span><br><span class="line">        while(l1!=null&amp;&amp;l2!=null)&#123;</span><br><span class="line">            if(l1.val&lt;l2.val)&#123;</span><br><span class="line">                prev.next = l1;</span><br><span class="line">                l1 = l1.next;</span><br><span class="line">            &#125;</span><br><span class="line">            else&#123;</span><br><span class="line">                prev.next=l2;</span><br><span class="line">                l2 = l2.next;</span><br><span class="line">            &#125;</span><br><span class="line">            prev = prev.next;</span><br><span class="line">        &#125;</span><br><span class="line">        prev.next = l1==null?l2:l1;</span><br><span class="line">        return dummy.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="参考方法：优先队列"><a href="#参考方法：优先队列" class="headerlink" title="参考方法：优先队列"></a>参考方法：优先队列</h3><p>我们维护一个队列。每次将每个链表的第一个元素加入，并且在加入的过程中进行排序。然后弹出的过程中构造新的链表以及想队列中加入弹出元素的下一个节点。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    PriorityQueue&lt;ListNode&gt; queue = new PriorityQueue&lt;&gt;((o1,o2)-&gt;o1.val-o2.val);</span><br><span class="line">    public ListNode mergeKLists(ListNode[] lists) &#123;</span><br><span class="line">        for(ListNode node:lists)&#123;</span><br><span class="line">            if(node!=null)&#123;</span><br><span class="line">                queue.offer(node);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode pre = new ListNode(0);</span><br><span class="line">        ListNode head = pre;</span><br><span class="line">        while(!queue.isEmpty())&#123;</span><br><span class="line">            ListNode temp = queue.poll();</span><br><span class="line">            pre.next = temp;</span><br><span class="line">            pre = pre.next;</span><br><span class="line">            if(temp.next!=null)&#123;</span><br><span class="line">                queue.offer(temp.next);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return head.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="优先队列进阶：手写小顶堆"><a href="#优先队列进阶：手写小顶堆" class="headerlink" title="优先队列进阶：手写小顶堆"></a>优先队列进阶：<font color = 'red'>手写小顶堆</font></h3><p>不使用JDK自带的PriorityQueue,自己实现一个小顶堆</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br></pre></td><td class="code"><pre><span class="line">/**</span><br><span class="line"> * Definition for singly-linked list.</span><br><span class="line"> * public class ListNode &#123;</span><br><span class="line"> *     int val;</span><br><span class="line"> *     ListNode next;</span><br><span class="line"> *     ListNode() &#123;&#125;</span><br><span class="line"> *     ListNode(int val) &#123; this.val = val; &#125;</span><br><span class="line"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span><br><span class="line"> * &#125;</span><br><span class="line"> */</span><br><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode mergeKLists(ListNode[] lists) &#123;</span><br><span class="line">        //如果lists为空或长度尾0，直接返回</span><br><span class="line">        if(lists==null||lists.length==0) return null;</span><br><span class="line">        //如果lists里只有一个元素，返回第一个</span><br><span class="line">        if(lists.length==1) return lists[0];</span><br><span class="line"></span><br><span class="line">        //创建一个小顶堆</span><br><span class="line">        MyMinHeap&lt;ListNode&gt; queue = new MyMinHeap&lt;ListNode&gt;(new Comparator&lt;ListNode&gt;()&#123;</span><br><span class="line">            @Override</span><br><span class="line">            public int compare(ListNode l1,ListNode l2)&#123;</span><br><span class="line">                return l1.val-l2.val;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line">        // 将Lists中的每个链表的头结点加入小顶堆</span><br><span class="line">        for(ListNode node:lists)&#123;</span><br><span class="line">            if(node!=null)&#123;</span><br><span class="line">                queue.add(node);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        //维护这个堆，过程中生成新链表</span><br><span class="line">        ListNode dummy = new ListNode(-1);</span><br><span class="line">        ListNode tail = dummy;</span><br><span class="line">        //当堆不为空时，弹出</span><br><span class="line">        while(!queue.isEmpty())&#123;</span><br><span class="line">            ListNode temp = queue.poll(); //弹出的元素</span><br><span class="line">            //构造新链表</span><br><span class="line">            tail.next = temp;</span><br><span class="line">            tail = tail.next;</span><br><span class="line">            //如果弹出的元素的下一个节点不为空，入堆</span><br><span class="line">            if(temp.next!=null)&#123;</span><br><span class="line">                queue.add(temp.next);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return dummy.next;//最后返回新链表的头结点</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 构造小顶堆</span><br><span class="line">    private static class MyMinHeap&lt;T&gt;&#123;</span><br><span class="line">        //列表保存元素</span><br><span class="line">        private List&lt;T&gt; items;</span><br><span class="line">        // 排序方法</span><br><span class="line">        private Comparator&lt;T&gt; comp;</span><br><span class="line"></span><br><span class="line">        // 借鉴PriorityQueue的写法进行完成</span><br><span class="line">        // 构造一个初始大小为32的堆</span><br><span class="line">        public MyMinHeap(Comparator&lt;T&gt; comp)&#123;</span><br><span class="line">            this(32,comp);</span><br><span class="line">        &#125;</span><br><span class="line">        // 有参构造，指定堆大小</span><br><span class="line">        public MyMinHeap(int size,Comparator&lt;T&gt; comp)&#123;</span><br><span class="line">            items = new ArrayList&lt;&gt;(size);</span><br><span class="line">            this.comp = comp;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 判断堆是否为空</span><br><span class="line">        public boolean isEmpty()&#123;</span><br><span class="line">            return items.size()==0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 向上调整堆,index为待调整的元素的index</span><br><span class="line">        public void siftUp(int index)&#123;</span><br><span class="line">            // 如果待调整元素值小于其父节点，就交换</span><br><span class="line">            while(comp.compare(items.get(index),items.get((index-1)/2))&lt;0)&#123;</span><br><span class="line">                T cur = items.get(index);</span><br><span class="line">                T parent = items.get((index-1)/2);</span><br><span class="line"></span><br><span class="line">                items.set(index,parent);</span><br><span class="line">                items.set((index-1)/2,cur);</span><br><span class="line"></span><br><span class="line">                //更新待调整元素的index</span><br><span class="line">                index= (index-1)/2;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 向下调整堆,index为待调整的元素的index</span><br><span class="line">        public void siftDown(int index)&#123;</span><br><span class="line">            // 找待调整元素的左孩子的index</span><br><span class="line">            int leftIndex = index*2+1;</span><br><span class="line">            // 当左孩子在堆范围内</span><br><span class="line">            while(leftIndex&lt;items.size())&#123;</span><br><span class="line">                // 找左右孩子的较小值的index</span><br><span class="line">                int minIndex = leftIndex+1&lt;items.size()&amp;&amp;comp.compare(items.get(leftIndex+1),items.get(leftIndex))&lt;0?leftIndex+1:leftIndex;</span><br><span class="line">                // 比较左右孩子的较小值与当前待调整节点的大小，如果当前待调整节点大，则要交换</span><br><span class="line">                minIndex = comp.compare(items.get(minIndex),items.get(index))&lt;0?minIndex:index;</span><br><span class="line">                if(index==minIndex) break;</span><br><span class="line">                else&#123;</span><br><span class="line">                    T cur = items.get(index);</span><br><span class="line">                    T swap = items.get(minIndex);</span><br><span class="line"></span><br><span class="line">                    items.set(index,swap);</span><br><span class="line">                    items.set(minIndex,cur);</span><br><span class="line"></span><br><span class="line">                    // 更新新的待调整节点和其左孩子，进入下一轮</span><br><span class="line">                    index = minIndex;</span><br><span class="line">                    leftIndex = 2*index+1;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 向堆中加入元素</span><br><span class="line">        public void add(T value)&#123;</span><br><span class="line">            // 在items最后加入元素</span><br><span class="line">            items.add(value);</span><br><span class="line">            // 向上调整堆</span><br><span class="line">            siftUp(items.size()-1);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 从堆中弹出堆顶</span><br><span class="line">        public T poll()&#123;</span><br><span class="line">            if (items.isEmpty()) &#123; // 如果堆已经为空，就报出异常</span><br><span class="line">                throw new RuntimeException(&quot;The heap is empty.&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">            T ans = items.get(0);</span><br><span class="line">            // 交换第0个和最后一个元素</span><br><span class="line">            T end = items.remove(items.size()-1);</span><br><span class="line">            if (items.isEmpty()) &#123; // 删除元素后，如果堆为空的情况，说明删除的元素也是堆顶元素</span><br><span class="line">                return end;</span><br><span class="line">            &#125;</span><br><span class="line">            items.set(0,end);        </span><br><span class="line">            siftDown(0);</span><br><span class="line">            return ans;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-7"><a href="#复杂度分析-7" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：优先队列中的元素不超过K个，因此查找和删除的复杂度都是O(log k)。假设每个链表的元素的长度最大为n, 则元素的总数为nk, 每个元素都会被加入和弹出一次，所以时间复杂度为O(nk * logk)</li>
+<li>空间复杂度：优先队列O(k)</li>
+</ul>
+<h2 id="八、相交链表"><a href="#八、相交链表" class="headerlink" title="八、相交链表"></a>八、相交链表</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/intersection-of-two-linked-lists/">160.相交链表</a></p>
+<h3 id="题目描述-7"><a href="#题目描述-7" class="headerlink" title="题目描述"></a>题目描述</h3><p>给定两个单链表的头结点headA和headB,找出并返回两个单链表相交的起始节点，如果两个链表没有交点，返回null.</p>
+<p>注意: 不能修改链表结构</p>
+<h4 id="测试用例-6"><a href="#测试用例-6" class="headerlink" title="测试用例"></a>测试用例</h4><h5 id="特殊情况"><a href="#特殊情况" class="headerlink" title="特殊情况"></a>特殊情况</h5><p>两个链表有为空的情况，返回null</p>
+<h5 id="两个链表不相交"><a href="#两个链表不相交" class="headerlink" title="两个链表不相交"></a>两个链表不相交</h5> <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904145734216.png" class="" title="image-20210904145734216">
+
+<h5 id="两个链表相交"><a href="#两个链表相交" class="headerlink" title="两个链表相交"></a>两个链表相交</h5><p> (注意不是看值相不相等，而是看节点地址)<img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904145758396.png" class="" title="image-20210904145758396"></p>
+<h3 id="思路-6"><a href="#思路-6" class="headerlink" title="思路"></a>思路</h3><p>设两个链表相交部分的长度为c, 未相交部分长度分别为a和b, 那么我们让一个指针从链表A开始走，当走到A结尾时，让它从链表B开始走。同样，另一个指针从链表B开始走，当走到B结尾时，让它从链表A开始走。</p>
+<p>那么如果他们有交点，那么肯定会在交点处相遇。因为a+c+b = b+c+a;而如果在这个过程中两者同时走到null了，就说明交点为null(即没有交点)，直接返回</p>
+<h4 id="代码实现-7"><a href="#代码实现-7" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public class Solution &#123;</span><br><span class="line">    public ListNode getIntersectionNode(ListNode headA, ListNode headB) &#123;</span><br><span class="line">        // 首先最特殊的情况</span><br><span class="line">        if(headA==null||headB==null) return null;</span><br><span class="line">        ListNode curA = headA;</span><br><span class="line">        ListNode curB = headB;</span><br><span class="line">        while(curA!=curB)&#123;</span><br><span class="line">            curA = curA.next;</span><br><span class="line">            curB = curB.next;</span><br><span class="line">            // 两个链表同时为空，说明都走到结尾了还没有找到交点</span><br><span class="line">            if(curA==null&amp;&amp;curB==null) return null;</span><br><span class="line">            if(curA==null) curA = headB;</span><br><span class="line">            if(curB==null) curB = headA;</span><br><span class="line">        &#125;</span><br><span class="line">        return curA;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-8"><a href="#复杂度分析-8" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O(m+n)，其中m和n分别是两个链表的长度</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h3 id="其它方法"><a href="#其它方法" class="headerlink" title="其它方法"></a>其它方法</h3><p>哈希表法，遍历，将一个链表的节点加入哈希表中。然后遍历另一个链表，如果过程中某个节点出现在了哈希表中，就是交点。否则到最后了还没有的话说明没有交点，返回null</p>
+<h2 id="九、链表中倒数第k个节点"><a href="#九、链表中倒数第k个节点" class="headerlink" title="九、链表中倒数第k个节点"></a>九、链表中倒数第k个节点</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/">剑指Offer22.链表中倒数第k个节点</a></p>
+<h3 id="题目描述-8"><a href="#题目描述-8" class="headerlink" title="题目描述"></a>题目描述</h3><p>输入一个链表，输出该链表中倒数第k个节点。从1开始计数，即倒数第一个就是最后一个。</p>
+<h4 id="测试用例-7"><a href="#测试用例-7" class="headerlink" title="测试用例"></a>测试用例</h4><p>注意k超出链表长度应该怎么办？</p>
+ <img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904165054257.png" class="" title="image-20210904165054257">
+
+<h3 id="思路-7"><a href="#思路-7" class="headerlink" title="思路"></a>思路</h3><p>“倒数第k个节点问题”—双指针法。first指针先走k步，然后second和first一起走，当first指针走到末尾的时候，second指向的指针就是我们要找的。</p>
+<h4 id="代码实现-8"><a href="#代码实现-8" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public ListNode getKthFromEnd(ListNode head, int k) &#123;</span><br><span class="line">        ListNode first =head,second = head;</span><br><span class="line">        for(int i = 0;i&lt;k&amp;&amp;first!=null;i++)&#123;</span><br><span class="line">            first =first.next;</span><br><span class="line">        &#125;</span><br><span class="line">        while(first!=null)&#123;</span><br><span class="line">            first =first.next;</span><br><span class="line">            second = second.next;</span><br><span class="line">        &#125;</span><br><span class="line">        return second;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-9"><a href="#复杂度分析-9" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O(N)</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h2 id="十、重排链表"><a href="#十、重排链表" class="headerlink" title="十、重排链表"></a>十、重排链表</h2><p><a target="_blank" rel="noopener" href="https://leetcode-cn.com/problems/reorder-list/">143.重排链表</a></p>
+<h3 id="题目描述-9"><a href="#题目描述-9" class="headerlink" title="题目描述"></a>题目描述</h3><img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904170248344.png" class="" title="image-20210904170248344">
+
+<p>理解一下就是把后面的元素从后往前依次插入到前面。不能知识单纯地改变节点内部的值，而是需要进行实际的节点交换。</p>
+<h4 id="测试用例-8"><a href="#测试用例-8" class="headerlink" title="测试用例"></a>测试用例</h4><p>长度小于等于2，直接返回。</p>
+<p>正常情况</p>
+<img src="/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/image-20210904170406287.png" class="" title="image-20210904170406287">
+
+<h3 id="思路-8"><a href="#思路-8" class="headerlink" title="思路"></a>思路</h3><ul>
+<li>首先，对于长度小于等于2的链表，不需要交换。直接返回。即<code>if (head == null|| head.next ==null || head.next.next == null) return head</code></li>
+<li>然后对于其它正常情况，找到链表的中点。如果链表长度是奇数，就找中点。如果是偶数，找下中点</li>
+<li>然后将中点后的链表和中点前的链表断开。</li>
+<li>将中点后的链表翻转，然后依次加到中点前的链表中</li>
+</ul>
+<p>因为题目要求了要进行实际的节点交换，但是这里没进行交换，不知道行不行。(惊呆了，官方就是这个思路。。。)</p>
+<h4 id="代码实现-9"><a href="#代码实现-9" class="headerlink" title="代码实现"></a>代码实现</h4><p>可以通过</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public void reorderList(ListNode head) &#123;</span><br><span class="line">        if(head==null||head.next==null||head.next.next==null)&#123;</span><br><span class="line">            return;</span><br><span class="line">        &#125;</span><br><span class="line">        //找中点</span><br><span class="line">        ListNode dummy = new ListNode(0,head);</span><br><span class="line">        ListNode first = dummy,second = head;</span><br><span class="line">        while(first.next!=null&amp;&amp;first.next.next!=null)&#123;</span><br><span class="line">            first = first.next.next;</span><br><span class="line">            second = second.next;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode backStart = second.next;//后半部分头结点</span><br><span class="line">        //断开两个部分</span><br><span class="line">        second.next = null;</span><br><span class="line">        //后半部分链表反向</span><br><span class="line">        ListNode newBack = reverseList(backStart);</span><br><span class="line">        first = head;</span><br><span class="line">        while(first!=second&amp;&amp;newBack!=null)&#123;</span><br><span class="line">            ListNode cur = newBack.next;</span><br><span class="line">            ListNode next = first.next;</span><br><span class="line">            first.next = newBack;</span><br><span class="line">            newBack.next = next;</span><br><span class="line">            first = next;</span><br><span class="line">            newBack = cur;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    public ListNode reverseList(ListNode head)&#123;</span><br><span class="line">        if(head==null||head.next==null) return head;</span><br><span class="line">        ListNode pre = null;</span><br><span class="line">        ListNode cur = head;</span><br><span class="line">        while(cur!=null)&#123;</span><br><span class="line">            ListNode next = cur.next;</span><br><span class="line">            cur.next = pre;</span><br><span class="line">            pre = cur;</span><br><span class="line">            cur = next;</span><br><span class="line">        &#125;</span><br><span class="line">        return pre;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-10"><a href="#复杂度分析-10" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O（n）,几个分离的遍历</li>
+<li>空间复杂度：O(1)</li>
+</ul>
+<h3 id="参考方法：空间复杂度O-n"><a href="#参考方法：空间复杂度O-n" class="headerlink" title="参考方法：空间复杂度O(n)"></a>参考方法：空间复杂度O(n)</h3><p>参考方法中给出了一种线性表的方法。就是遍历节点将链表的节点放到一个list里面，然后就可以按照数组的操作来做了。</p>
+<h4 id="代码实现-10"><a href="#代码实现-10" class="headerlink" title="代码实现"></a>代码实现</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">    public void reorderList(ListNode head) &#123;</span><br><span class="line">        if(head==null) return;</span><br><span class="line">        List&lt;ListNode&gt; list = new ArrayList&lt;&gt;();</span><br><span class="line">        ListNode cur = head;</span><br><span class="line">        // 构造列表</span><br><span class="line">        while(cur!=null)&#123;</span><br><span class="line">            list.add(cur);</span><br><span class="line">            cur = cur.next;</span><br><span class="line">        &#125;</span><br><span class="line">        // 构造节点间的指针关系</span><br><span class="line">        int i = 0,j = list.size()-1;</span><br><span class="line">        while(i&lt;j)&#123;</span><br><span class="line">            list.get(i).next = list.get(j);</span><br><span class="line">            i++;</span><br><span class="line">            if(i==j) break;</span><br><span class="line">            list.get(j).next = list.get(i);</span><br><span class="line">            j--;</span><br><span class="line">        &#125;</span><br><span class="line">        // 最后令尾节点为null</span><br><span class="line">        list.get(i).next = null;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="复杂度分析-11"><a href="#复杂度分析-11" class="headerlink" title="复杂度分析"></a>复杂度分析</h4><ul>
+<li>时间复杂度：O(n)</li>
+<li>空间复杂度：O(n)</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">leetcode 链表篇一</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/07/02/Leetcode%E5%88%B7%E9%A2%98%E4%B9%8B%E9%93%BE%E8%A1%A8/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2021/07/01/hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo搭建个人博客</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%93%BE%E8%A1%A8"><span class="toc-number">1.</span> <span class="toc-text">链表</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8"><span class="toc-number">1.1.</span> <span class="toc-text">一、反转链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0"><span class="toc-number">1.1.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B"><span class="toc-number">1.1.1.1.</span> <span class="toc-text">测试用例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#1%E3%80%81%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5%EF%BC%9A%E9%93%BE%E8%A1%A8%E4%B8%BA%E7%A9%BA%E6%88%96%E8%80%85%E9%93%BE%E8%A1%A8%E9%95%BF%E5%BA%A6%E5%B0%8F%E4%BA%8E2"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text">1、特殊情况：链表为空或者链表长度小于2</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#2-%E3%80%81%E6%AD%A3%E5%B8%B8%E6%83%85%E5%86%B5"><span class="toc-number">1.1.1.1.2.</span> <span class="toc-text">2 、正常情况</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-number">1.1.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%92%E5%BD%92%E6%B3%95"><span class="toc-number">1.1.2.1.</span> <span class="toc-text">递归法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0"><span class="toc-number">1.1.2.1.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90"><span class="toc-number">1.1.2.1.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3%E6%B3%95"><span class="toc-number">1.1.3.</span> <span class="toc-text">迭代法</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-1"><span class="toc-number">1.1.3.0.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-1"><span class="toc-number">1.1.3.0.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8%E8%BF%9B%E9%98%B6%E4%B8%80"><span class="toc-number">1.2.</span> <span class="toc-text">二、反转链表进阶一</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-1"><span class="toc-number">1.2.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-1"><span class="toc-number">1.2.1.1.</span> <span class="toc-text">测试用例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#left-right-%E7%9B%B4%E6%8E%A5%E8%BF%94%E5%9B%9E"><span class="toc-number">1.2.1.1.1.</span> <span class="toc-text">left&#x3D;&#x3D;right:直接返回</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#left-0-%E5%A4%B4%E7%BB%93%E7%82%B9%E4%BC%9A%E5%8F%98"><span class="toc-number">1.2.1.1.2.</span> <span class="toc-text">left&#x3D;&#x3D;0:头结点会变</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%83%85%E5%86%B5"><span class="toc-number">1.2.1.1.3.</span> <span class="toc-text">正常情况</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="toc-number">1.2.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B7%E4%BD%93%E6%96%B9%E6%B3%95"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">具体方法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-2"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-2"><span class="toc-number">1.2.2.3.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81K%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8"><span class="toc-number">1.3.</span> <span class="toc-text">三、K个一组翻转链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-2"><span class="toc-number">1.3.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-2"><span class="toc-number">1.3.1.1.</span> <span class="toc-text">测试用例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="toc-number">1.3.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-3"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-3"><span class="toc-number">1.3.2.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E3%80%81%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8"><span class="toc-number">1.4.</span> <span class="toc-text">四、环形链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-3"><span class="toc-number">1.4.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-3"><span class="toc-number">1.4.1.1.</span> <span class="toc-text">测试用例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5%EF%BC%9A%E9%93%BE%E8%A1%A8%E4%B8%BA%E7%A9%BA%E6%88%96%E8%80%85%E9%93%BE%E8%A1%A8%E9%95%BF%E5%BA%A6%E5%B0%8F%E4%BA%8E2"><span class="toc-number">1.4.1.1.1.</span> <span class="toc-text">特殊情况：链表为空或者链表长度小于2</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%83%85%E5%86%B5-1"><span class="toc-number">1.4.1.1.2.</span> <span class="toc-text">正常情况</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-3"><span class="toc-number">1.4.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-4"><span class="toc-number">1.4.2.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-4"><span class="toc-number">1.4.2.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%94%E3%80%81%E7%8E%AF%E5%BD%A2%E9%93%BE%E8%A1%A8%E8%BF%9B%E9%98%B6"><span class="toc-number">1.5.</span> <span class="toc-text">五、环形链表进阶</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-4"><span class="toc-number">1.5.1.</span> <span class="toc-text">题目描述</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%80%83"><span class="toc-number">1.5.2.</span> <span class="toc-text">思考</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%88%86%E6%9E%90"><span class="toc-number">1.5.2.1.</span> <span class="toc-text">分析</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-5"><span class="toc-number">1.5.2.1.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-5"><span class="toc-number">1.5.2.1.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AD%E3%80%81%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8"><span class="toc-number">1.6.</span> <span class="toc-text">六、合并两个有序链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-5"><span class="toc-number">1.6.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-4"><span class="toc-number">1.6.1.1.</span> <span class="toc-text">测试用例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B51%EF%BC%9A%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E9%83%BD%E4%B8%BA%E7%A9%BA%EF%BC%8C%E8%BF%94%E5%9B%9E%E7%A9%BA"><span class="toc-number">1.6.1.1.1.</span> <span class="toc-text">特殊情况1：两个链表都为空，返回空</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B52%EF%BC%9A%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E5%85%B6%E4%B8%AD%E8%A6%81%E7%BB%99%E9%93%BE%E8%A1%A8%E4%B8%BA%E7%A9%BA%EF%BC%8C%E8%BF%94%E5%9B%9E%E9%9D%9E%E7%A9%BA%E7%9A%84%E5%93%AA%E4%B8%80%E4%B8%AA"><span class="toc-number">1.6.1.1.2.</span> <span class="toc-text">特殊情况2：两个链表其中要给链表为空，返回非空的哪一个</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%83%85%E5%86%B5-2"><span class="toc-number">1.6.1.1.3.</span> <span class="toc-text">正常情况</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-4"><span class="toc-number">1.6.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%AD%E4%BB%A3"><span class="toc-number">1.6.2.1.</span> <span class="toc-text">迭代</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%80%92%E5%BD%92"><span class="toc-number">1.6.2.2.</span> <span class="toc-text">递归</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-6"><span class="toc-number">1.6.2.3.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%83%E3%80%81%E8%BF%9B%E9%98%B6%EF%BC%9A%E5%90%88%E5%B9%B6K%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8"><span class="toc-number">1.7.</span> <span class="toc-text">七、进阶：合并K个有序链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-6"><span class="toc-number">1.7.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-5"><span class="toc-number">1.7.1.1.</span> <span class="toc-text">测试用例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B51%EF%BC%9A%E9%93%BE%E8%A1%A8%E6%95%B0%E7%BB%84%E4%B8%BA%E7%A9%BA"><span class="toc-number">1.7.1.1.1.</span> <span class="toc-text">特殊情况1：链表数组为空</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B52%EF%BC%9A%E9%93%BE%E8%A1%A8%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%93%BE%E8%A1%A8%E4%B8%BA%E7%A9%BA"><span class="toc-number">1.7.1.1.2.</span> <span class="toc-text">特殊情况2：链表数组中的链表为空</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E6%AD%A3%E5%B8%B8%E6%83%85%E5%86%B5-3"><span class="toc-number">1.7.1.1.3.</span> <span class="toc-text">正常情况</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-5"><span class="toc-number">1.7.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-6"><span class="toc-number">1.7.2.1.</span> <span class="toc-text">代码实现</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%B9%E6%B3%95%EF%BC%9A%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97"><span class="toc-number">1.7.3.</span> <span class="toc-text">参考方法：优先队列</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BC%98%E5%85%88%E9%98%9F%E5%88%97%E8%BF%9B%E9%98%B6%EF%BC%9A%E6%89%8B%E5%86%99%E5%B0%8F%E9%A1%B6%E5%A0%86"><span class="toc-number">1.7.4.</span> <span class="toc-text">优先队列进阶：手写小顶堆</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-7"><span class="toc-number">1.7.4.1.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%AB%E3%80%81%E7%9B%B8%E4%BA%A4%E9%93%BE%E8%A1%A8"><span class="toc-number">1.8.</span> <span class="toc-text">八、相交链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-7"><span class="toc-number">1.8.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-6"><span class="toc-number">1.8.1.1.</span> <span class="toc-text">测试用例</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E7%89%B9%E6%AE%8A%E6%83%85%E5%86%B5"><span class="toc-number">1.8.1.1.1.</span> <span class="toc-text">特殊情况</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E4%B8%8D%E7%9B%B8%E4%BA%A4"><span class="toc-number">1.8.1.1.2.</span> <span class="toc-text">两个链表不相交</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E4%B8%A4%E4%B8%AA%E9%93%BE%E8%A1%A8%E7%9B%B8%E4%BA%A4"><span class="toc-number">1.8.1.1.3.</span> <span class="toc-text">两个链表相交</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-6"><span class="toc-number">1.8.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-7"><span class="toc-number">1.8.2.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-8"><span class="toc-number">1.8.2.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B6%E5%AE%83%E6%96%B9%E6%B3%95"><span class="toc-number">1.8.3.</span> <span class="toc-text">其它方法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B9%9D%E3%80%81%E9%93%BE%E8%A1%A8%E4%B8%AD%E5%80%92%E6%95%B0%E7%AC%ACk%E4%B8%AA%E8%8A%82%E7%82%B9"><span class="toc-number">1.9.</span> <span class="toc-text">九、链表中倒数第k个节点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-8"><span class="toc-number">1.9.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-7"><span class="toc-number">1.9.1.1.</span> <span class="toc-text">测试用例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-7"><span class="toc-number">1.9.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-8"><span class="toc-number">1.9.2.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-9"><span class="toc-number">1.9.2.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%81%E3%80%81%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8"><span class="toc-number">1.10.</span> <span class="toc-text">十、重排链表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E6%8F%8F%E8%BF%B0-9"><span class="toc-number">1.10.1.</span> <span class="toc-text">题目描述</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B-8"><span class="toc-number">1.10.1.1.</span> <span class="toc-text">测试用例</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-8"><span class="toc-number">1.10.2.</span> <span class="toc-text">思路</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-9"><span class="toc-number">1.10.2.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-10"><span class="toc-number">1.10.2.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%B9%E6%B3%95%EF%BC%9A%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6O-n"><span class="toc-number">1.10.3.</span> <span class="toc-text">参考方法：空间复杂度O(n)</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E7%8E%B0-10"><span class="toc-number">1.10.3.1.</span> <span class="toc-text">代码实现</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90-11"><span class="toc-number">1.10.3.2.</span> <span class="toc-text">复杂度分析</span></a></li></ol></li></ol></li></ol></li></ol>
+                    </div>
+                </span>
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+
+
+  
+  
+    <section id="comments" class="comments">
+      <style>
+        .comments{margin:30px;padding:10px;background:#fff}
+        @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+      </style>
+      <div id="vcomment" class="comment"></div>
+<!--<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>-->
+<!--<script src="//unpkg.com/valine/dist/Valine.min.js"></script>-->
+<script src="/av-min.js"></script>
+<script src="/Valine.min.js"></script>
+<script>
+    var notify = 'false' == true ? true : false;
+    var verify = 'false' == true ? true : false;
+    window.onload = function () {
+        new Valine({
+            el: '#vcomment', // or '.comment'
+            notify: notify,
+            verify: verify,
+            app_id: "o0H2qv9H72IkYghN4z7zaDQ7-gzGzoHsz#Leancloud应用的appId",
+            app_key: "uF1lb5QyCNqxkFwwYXLvj9if#Leancloud应用的appKey",
+            placeholder: "gogogo",
+            avatar: "",
+        });
+    }
+</script>
+    </section>
     
 
 
@@ -206,8 +597,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
@@ -274,6 +665,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">leetcode 链表篇一</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
